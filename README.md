@@ -1,42 +1,33 @@
 # Fix8 Web Application
 
-Fix8 (Fixate) is an open source Python tool for visualizing and correcting eye tracking data. This project combines a desktop GUI application with a web interface for comprehensive eye tracking data analysis and correction.
+Credits to: https://github.com/nalmadi/fix8 
 
-## Project Overview
-
-Fix8 supports manual, automated, and semi-automated correction methods for eye tracking data in reading tasks. The application provides tools for:
-
-- Visualizing eye tracking data (fixations and saccades)
-- Manual correction of fixation positions
-- Automated correction algorithms
-- Area of Interest (AOI) detection and analysis
-- Data filtering and preprocessing
-- Export capabilities for corrected data
+fix8 (Fixate) is an Open-Source GUI Tool for Working with Eye Tracking Data in Reading Tasks.
 
 ## Project Structure
 
 ```
 fix8-webapp/
-├── app.py                          # Main Flask application entry point
-├── requirements.txt                # Python dependencies
-├── Procfile                       # Heroku deployment configuration
-├── LICENSE                        # Project license
-├── README.md                      # This file
+├── app.py                       # Main Flask application entry point
+├── requirements.txt             # Python dependencies
+├── Procfile                     # Heroku deployment configuration
+├── LICENSE                      # Project license
+├── README.md                    # This file
 │
-├── website/                       # Web application package
-│   ├── __init__.py               # Flask app factory
-│   ├── views.py                  # Web routes and views
-│   ├── math.py                   # Mathematical utilities
-│   ├── templates/                # HTML templates
+├── website/                     # Web application package
+│   ├── __init__.py              # Flask app factory
+│   ├── views.py                 # Web routes and views
+│   ├── math.py                  # Mathematical utilities
+│   ├── templates/               # HTML templates
 │   │   └── index.html           # Main web interface
-│   ├── datasets/                 # Sample eye tracking datasets
+│   ├── datasets/                # Sample eye tracking datasets
 │   │   ├── AlMadi2018/          # Research dataset
 │   │   ├── Carr2022/            # Research dataset
 │   │   ├── EMIP2021/            # Eye Movement in Programming dataset
 │   │   ├── GazeBase/            # Gaze tracking dataset
 │   │   ├── MET_Dataset/         # Multilingual eye tracking dataset
 │   │   └── starter_examples/    # Basic examples
-│   └── src/                      # Core Fix8 application source
+│   └── src/                     # Core Fix8 application source
 │       ├── fix8.py              # Main Fix8 application class
 │       ├── ui_main_window.py    # PyQt5 GUI interface
 │       ├── state.py             # State management
@@ -47,7 +38,7 @@ fix8-webapp/
 │       ├── canvas_resources.py  # Canvas drawing utilities
 │       └── [dialog modules]     # Various dialog interfaces
 │
-└── test/                         # Testing framework
+└── test/                        # Testing Suite
     ├── __init__.py
     ├── conftest.py              # Pytest configuration
     ├── run_tests.py             # Test runner
